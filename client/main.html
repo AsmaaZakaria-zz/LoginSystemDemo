@@ -1,0 +1,34 @@
+<head>
+  <title>LoginSystemDemo</title>
+</head>
+
+
+<template name="index">
+  <a href="{{pathFor route='register'}}">Register</a>
+  <a href="{{pathFor route='login'}}">Login</a>
+
+</template>
+
+
+<template name="register">
+  <h1>Register</h1>
+  <form>
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="submit" value="Register">
+  </form>
+</template>
+
+<template name="login">
+  <h1>Login</h1>
+  <form>
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="submit" value="Login">
+  </form>
+</template>
+
+<template name="home">
+  <h1>Welcome Home ...!!!</h1>
+  <a href="{{pathFor route='index'}}">Logout</a>
+</template>
